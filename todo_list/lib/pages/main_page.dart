@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:todo_list/task.dart';
+import 'package:todo_list/components/task.dart';
 
 class MainPage extends StatefulWidget {
+  const MainPage({super.key});
+
   @override
   State<MainPage> createState() => _MainPageState();
 }

@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:todo_list/main_page.dart';
-import 'package:todo_list/task.dart';
+import 'package:todo_list/pages/main_page.dart';
 
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  MyApp({super.key});
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
