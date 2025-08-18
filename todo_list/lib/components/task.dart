@@ -103,7 +103,9 @@ class _TaskState extends State<Task> {
                         bottomLeft: Radius.circular(10),
                         bottomRight: Radius.circular(10),
                       ),
-                      color: Colors.blue,
+                      color: (nivel / widget.dificuldade) >= 10
+                          ? Colors.green
+                          : Colors.red,
                     ),
                     height: 40,
                     child: Padding(

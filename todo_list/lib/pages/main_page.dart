@@ -48,6 +48,57 @@ class _MainPageState extends State<MainPage> {
               foto: "https://picsum.photos/200/300",
               dificuldade: 5,
             ),
+            Task(
+              title: "Ler um livro",
+              foto: "https://picsum.photos/seed/book/200/300",
+              dificuldade: 2,
+            ),
+            Task(
+              title: "Caminhar",
+              foto: "https://picsum.photos/seed/walk/200/300",
+              dificuldade: 1,
+            ),
+            Task(
+              title: "Estudar Dart",
+              foto: "https://picsum.photos/seed/dart/200/300",
+              dificuldade: 4,
+            ),
+            Task(
+              title: "Fazer compras",
+              foto: "https://picsum.photos/seed/market/200/300",
+              dificuldade: 3,
+            ),
+            Task(
+              title: "Arrumar a mesa",
+              foto: "https://picsum.photos/seed/desk/200/300",
+              dificuldade: 1,
+            ),
+            Task(
+              title: "Meditar",
+              foto: "https://picsum.photos/seed/meditate/200/300",
+              dificuldade: 2,
+            ),
+            Task(
+              title: "Lavar roupa",
+              foto: "https://picsum.photos/seed/laundry/200/300",
+              dificuldade: 3,
+            ),
+            Task(
+              title: "Escrever código",
+              foto: "https://picsum.photos/seed/code/200/300",
+              dificuldade: 5,
+            ),
+            Task(
+              title: "Regar as plantas",
+              foto: "https://picsum.photos/seed/plants/200/300",
+              dificuldade: 1,
+            ),
+            Task(
+              title: "Organizar emails",
+              foto: "https://picsum.photos/seed/email/200/300",
+              dificuldade: 2,
+            ),
+            SizedBox(height: 80),
           ],
         ),
       ),
