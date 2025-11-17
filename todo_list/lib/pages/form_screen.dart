@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:todo_list/components/task.dart';
 import 'package:todo_list/data/iInherite_task.dart';
+import 'package:todo_list/data/task_dao.dart';
 
 class FormScreen extends StatefulWidget {
   FormScreen({super.key, required this.taskContext});
@@ -137,12 +138,7 @@ class _FormScreenState extends State<FormScreen> {
                     ElevatedButton(
                       onPressed: () {
                         if (_formKey.currentState!.validate()) {
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            SnackBar(
-                              content: Text("Tarefa adicionada com sucesso!"),
-                            ),
-                          );
-                          Inheritetask.of(widget.taskContext).addTask(
+                          TaskDao().save(
                             Task(
                               title: _nameController.text,
                               dificuldade: int.parse(
@@ -151,6 +147,12 @@ class _FormScreenState extends State<FormScreen> {
                               foto: _imageController.text,
                             ),
                           );
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            SnackBar(
+                              content: Text("Tarefa adicionada com sucesso!"),
+                            ),
+                          );
+
                           Navigator.pop(context);
                         }
                       },
